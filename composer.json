@@ -1,0 +1,25 @@
+{
+    "name": "mx2/xuong-oop",
+    "autoload": {
+        "psr-4": {
+            "Mx2\\XuongOop\\": "src/"
+        
+    },
+    "files" : [
+        "helper.php"
+    ]
+ },
+    "authors": [
+        {
+            "name": "Mx2",
+            "email": "tungteng258@gamil.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6",
+        "eftec/bladeone": "^4.13",
+        "doctrine/dbal": "^4.0",
+        "rakit/validation": "^1.4",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
