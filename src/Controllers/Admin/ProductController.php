@@ -26,10 +26,10 @@ class ProductController extends Controller
     public function index()
     {
         $data = $this->product->all();
-
+        $totalRecords = $this->product->countAll();
         $this->renderViewAdmin('products.' . __FUNCTION__, [
             'data' => $data,
-
+            'totalRecords' => $totalRecords
         ]);
     }
 

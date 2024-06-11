@@ -22,10 +22,13 @@ class CategoryController extends Controller
     public function index()
     {
         [$categories, $totalPage] = $this->category->paginate($_GET['page'] ?? 1);
+        $totalRecords = $this->category->countAll();
 
         $this->renderViewAdmin('categories.index', [
             'categories' => $categories,
-            'totalPage' => $totalPage
+            'totalPage' => $totalPage,
+            'totalRecords' => $totalRecords
+
         ]);
     }
 

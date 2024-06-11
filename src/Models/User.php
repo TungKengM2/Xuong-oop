@@ -18,4 +18,14 @@ class User extends Model
             ->fetchAssociative();
     }
 
+    public function countAll()
+    {
+        $result = $this->queryBuilder
+            ->select('COUNT(*) AS total')
+            ->from($this->tableName)
+            ->fetchAssociative();
+
+        return $result['total'];
+    }
+
 }

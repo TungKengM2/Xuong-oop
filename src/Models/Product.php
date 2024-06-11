@@ -49,8 +49,7 @@ class Product extends Model
         $query = $queryBuilder->insert($this->tableName);
 
         $index = 0;
-        foreach($data as $filed => $value)
-        {
+        foreach ($data as $filed => $value) {
             $query->setValue($filed, '?')->setParameter($index, $value);
 
             ++$index;
@@ -58,4 +57,15 @@ class Product extends Model
 
         $query->executeQuery();
     }
+
+    public function countAll()
+    {
+        $result = $this->queryBuilder
+            ->select('COUNT(*) AS total')
+            ->from($this->tableName)
+            ->fetchAssociative();
+
+        return $result['total'];
+    }
+
 }

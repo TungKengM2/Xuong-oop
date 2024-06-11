@@ -26,5 +26,14 @@ class Category extends Model
             ->from($this->tableName)
             ->fetchAllAssociative();
     }
+    public function countAll()
+    {
+        $result = $this->queryBuilder
+            ->select('COUNT(*) AS total')
+            ->from($this->tableName)
+            ->fetchAssociative();
+
+        return $result['total'];
+    }
 
 }

@@ -21,6 +21,7 @@
                     <div class="white_card_body">
 
                         <a class="btn btn-primary" href="{{ url('admin/users/create') }}">Thêm mới</a>
+                        <h5 class="welcome-text mt-5">Số lượng người dùng : {{ $totalRecords }} người dùng</h5>
 
                         @if (isset($_SESSION['status']) && $_SESSION['status'])
                             <div class="alert alert-success">

@@ -21,6 +21,8 @@
                     <div class="white_card_body">
 
                         <a class="btn btn-primary" href="{{ url('admin/products/create') }}">Thêm mới</a>
+                        <h5 class="welcome-text mt-5">Số lượng sản phẩm : {{ $totalRecords }} sản phẩm</h5>
+
 
                         @if (isset($_SESSION['status']) && $_SESSION['status'])
                             <div class="alert alert-success">

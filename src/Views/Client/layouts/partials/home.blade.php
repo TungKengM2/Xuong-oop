@@ -3,7 +3,6 @@
         <div class="owl-carousel owl-theme">
             @foreach ($products as $product)
                 <div class="owl-slide cover" style="background-image: url(img/slides/slide_home_2.jpg);">
-                    
                     <img src="{{ $product['img_thumbnail'] }}" width="100px" alt="">
 
                     <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
@@ -47,14 +46,14 @@
                     <div class="grid_item">
                         <span class="ribbon new">New</span>
                         <figure>
-                            <a href="product-detail-1.html">
+                            <a href="{{ url('products') }}">
                                 <img src="{{ $product['img_thumbnail'] }}" width="100px" alt="">
                             </a>
                         </figure>
                         <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
                                 class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
                         </div>
-                        <a href="product-detail-1.html">
+                        <a href="{{ url('products') }}">
                             <h3>{{ $product['name'] }}</h3>
                         </a>
                         <div class="price_box">

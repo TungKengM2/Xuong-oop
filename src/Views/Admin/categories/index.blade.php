@@ -14,6 +14,8 @@
                     <div class="white_card_header">
                         <div class="box_header m-0">
                             <div class="main-title">
+                                <h5 class="welcome-text mt-5">Số lượng danh mục : {{ $totalRecords }} danh mục</h5>
+
                                 <h1 class="m-0">Danh sách Danh Mục</h1>
                             </div>
                         </div>
@@ -45,7 +47,7 @@
                                 @foreach ($categories as $category)
                                     <tr>
                                         <td><?= $category['id'] ?></td>
-                                     
+
                                         <td><?= $category['name'] ?></td>
                                         <td>
 

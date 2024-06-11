@@ -56,6 +56,10 @@
                                             class="percentage"></span> <span
                                             class="old_price">{{ $product['price_regular'] }}</span>
                                     </div>
+                                    <div class="price_main"><span
+                                        class="new_price">{{ $product['overview'] }}</span><span
+                                        class="percentage"></span> 
+                                </div>
 
                                 
                                 </div>
