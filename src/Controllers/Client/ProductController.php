@@ -15,7 +15,10 @@ class ProductController extends Controller
     }
     public function index()
     {
-        echo __CLASS__ . '@'  . __FUNCTION__;
+        $products = $this->product->all();
+        $this->renderViewClient('products', [
+            'products' => $products
+        ]);
     }
 
     public function detail($id)

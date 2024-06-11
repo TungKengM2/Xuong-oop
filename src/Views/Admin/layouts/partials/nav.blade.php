@@ -1,6 +1,6 @@
 <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
     <div class="logo d-flex justify-content-between">
-        <a href="index-2.html"><img src="{{ asset('assets/admin/img/logo.png') }}" alt></a>
+        <a href="{{asset('admin')}}"><img src="{{ asset('assets/admin/img/logo.png') }}" alt></a>
         <div class="sidebar_close_icon d-lg-none">
             <i class="ti-close"></i>
         </div>
@@ -14,9 +14,9 @@
                 <span>Chức Năng</span>
             </a>
             <ul>
-                <li><a class="active" href="{{asset('admin/users')}}">Danh Sách User</a></li>
-                <li><a href="index_2.html">Sửa Thông Tin</a></li>
-                <li><a href="index_3.html">Cập Nhập</a></li>
+                <li><a class="active" href="{{asset('admin/users')}}">Quản Lý User</a></li>
+                <li><a href="{{asset('admin/categories')}}">Quản Lý Danh Mục</a></li>
+                <li><a href="{{asset('admin/products')}}">Quản Lý Sản Phẩm</a></li>
             </ul>
         </li>
  

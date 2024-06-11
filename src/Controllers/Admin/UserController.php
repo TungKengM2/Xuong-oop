@@ -159,7 +159,7 @@ class UserController extends Controller
 
             $_SESSION['status'] = true;
             $_SESSION['msg'] = 'Thao tac thanh cong';
-            header('Location: ' . url("admin/users/{$user['id']}/edit"));
+            header('Location: ' . url("admin/users"));
             exit;
         }
     }

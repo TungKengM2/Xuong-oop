@@ -118,12 +118,12 @@
                         <img src="{{ asset('assets/admin/img/client_img.png') }}" alt="#">
                         <div class="profile_info_iner">
                             <div class="profile_author_name">
-                                <p>Neurologist </p>
-                                <h5>Dr. Robar Smith</h5>
+                               
+
+                                <p> Welcom To Admin </p>
+                               
                             </div>
                             <div class="profile_info_details">
-                                <a href="#">My Profile </a>
-                                <a href="#">Settings</a>
                                 <a href="{{asset('logout')}}">Log Out </a>
                             </div>
                         </div>

@@ -56,6 +56,8 @@
                                             class="percentage"></span> <span
                                             class="old_price">{{ $product['price_regular'] }}</span>
                                     </div>
+
+                                
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="btn_add_to_cart">
